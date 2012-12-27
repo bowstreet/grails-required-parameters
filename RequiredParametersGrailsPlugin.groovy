@@ -1,6 +1,6 @@
 class RequiredParametersGrailsPlugin {
     // the plugin version
-    def version = "0.1"
+    def version = "0.1-SNAPSHOT"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.1 > *"
     // the other plugins this plugin depends on
@@ -10,8 +10,7 @@ class RequiredParametersGrailsPlugin {
         "grails-app/views/error.gsp"
     ]
 
-    // TODO Fill in these fields
-    def title = "Grails Required Parameters Plugin" // Headline display name of the plugin
+    def title = "Grails Required Parameters Plugin"
     def author = "Matthias Wenz"
     def authorEmail = "mat@bowstreet.de"
     def description = '''\
