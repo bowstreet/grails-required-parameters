@@ -3,6 +3,8 @@ package de.bowstreet.grails.plugins
 import java.lang.annotation.Annotation
 import java.lang.reflect.Method
 
+import javax.servlet.http.HttpServletResponse;
+
 import de.bowstreet.grails.plugins.*
 
 class RequiredParametersFilters {
@@ -25,8 +27,6 @@ class RequiredParametersFilters {
                     requiredParameters = new RequiredParamsExtractor().getRequiredParametersForControllerAction(controllerClass, action)
                 }
                 
-                log.error "Required Parameters: ${requiredParameters}"
-
                 def missingParameters = []
                 requiredParameters.each {
                     if (params[it] == null) {
@@ -35,8 +35,11 @@ class RequiredParametersFilters {
                 }
 
                 if (missingParameters.size() > 0) {
-                    log.error "Request has been blocked. The following required parameters were not passed: ${missingParameters}"
-                    render "BAD REQUEST"
+                    log.warn "Request has been blocked. The following required parameters were not passed: ${missingParameters}"
+                    
+                    // TODO define what to do in this case
+                    render status: HttpServletResponse.SC_BAD_REQUEST, text: "Missing parameters: ${missingParameters}"
+                    
                     return false
                 }
 
