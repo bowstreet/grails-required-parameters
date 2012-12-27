@@ -1,6 +1,6 @@
 class RequiredParametersGrailsPlugin {
     
-    def version = "0.1-SNAPSHOT"
+    def version = "1.0.0-SNAPSHOT"
     def grailsVersion = "2.1 > *"
     def dependsOn = [:]
     def pluginExcludes = [
