@@ -14,7 +14,7 @@ import de.bowstreet.grails.plugins.RequiredParameters
 
 public class FooController {
 	
-	@Required('id', 'anotherParam')
+	@RequiredParameters('id', 'anotherParam')
 	def bar() {
 		// action logic...
 	}
