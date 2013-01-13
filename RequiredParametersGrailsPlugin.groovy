@@ -14,10 +14,10 @@ class RequiredParametersGrailsPlugin {
 Plugin that enables required parameters for controller actions using simple annotations.
 '''
 
-    def documentation = "https://github.com/ranterscheinung/grails-required-parameters/"
+    def documentation = "https://github.com/bowstreet/grails-required-parameters/"
     def license = "APACHE"
     def organization = [ name: "Bowstreet", url: "http://www.bowstreet.de/" ]
-    def scm = [ url: "https://github.com/ranterscheinung/grails-required-parameters/" ]
+    def scm = [ url: "https://github.com/bowstreet/grails-required-parameters/" ]
 
     def doWithWebDescriptor = { xml ->
     }
