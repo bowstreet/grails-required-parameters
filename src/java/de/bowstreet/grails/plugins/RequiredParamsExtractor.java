@@ -4,15 +4,16 @@ import java.lang.reflect.Method;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
 import org.codehaus.groovy.grails.commons.GrailsClass;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class RequiredParamsExtractor {
     
     public static final Logger log;
     
     static {
-        log = Logger.getLogger(RequiredParamsExtractor.class);
+        log = LoggerFactory.getLogger(RequiredParamsExtractor.class);
     }
     
     public Set<String> getRequiredParametersForControllerAction(Class<GrailsClass> controllerClass, String actionName) {
