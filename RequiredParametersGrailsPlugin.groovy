@@ -1,6 +1,6 @@
 class RequiredParametersGrailsPlugin {
 
-    def version = "1.0.0-SNAPSHOT"
+    def version = "1.0.0"
     def grailsVersion = "2.0 > *"
 
     def title = "Grails Required Parameters Plugin"
