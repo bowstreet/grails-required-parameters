@@ -46,3 +46,6 @@
 /target-eclipse/
 *.zip.sha1
 /plugin.xml
+/web-app/
+/.idea/
+*.iml
