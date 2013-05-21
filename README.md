@@ -21,3 +21,5 @@ public class FooController {
 	
 }
 ```
+
+The request will only be forwarded to the controller if all the given conditions are met. If a required parameter is missing, the user will get an HTTP 400 BAD REQUEST.
