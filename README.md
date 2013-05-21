@@ -23,3 +23,7 @@ public class FooController {
 ```
 
 The request will only be forwarded to the controller if all the given conditions are met. If a required parameter is missing, the user will get an HTTP 400 BAD REQUEST.
+
+## Extend
+
+Please use this plugin as a starting point for your own purposes - its very simple in nature right now, because that's what we need right now - but we plan to expand it in the future. Look at the issues section if you want to see what's already planned.
